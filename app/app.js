@@ -24,6 +24,13 @@ config(function($stateProvider,$routeProvider) {
 		controller:'LoginCtrl'
 	})
 
+	.state('signup',{
+		url:'/signup',
+		templateUrl:'app/components/signup/signup.html',
+		controller:'SignUpCtrl'
+	})
+
+
 	$routeProvider.otherwise({redirectTo: '/login'}); 
 	
 		

@@ -1,0 +1,18 @@
+<div ng-controller="SignUpCtrl" class="row signUp">
+<div class="col-lg-4">
+<form class="form-signin" ng-submit="signUp(credentials)">
+	<h2 class="form-signin-heading">Introduce Yourself</h2>
+	<label for="signUpName" class="sr-only">Full Name</label>
+	<input type="text" id="signUpName" class="form-control" placeholder="Full Name" required="" autofocus="" ng-model="credentials.fullname">
+	<label for="signUpEmail" class="sr-only">Email address</label>
+	<input type="email" id="signUpEmail" class="form-control" placeholder="Email address" required="" autofocus="" ng-model="credentials.email">
+	<label for="signUpPassword" class="sr-only">Password</label>
+	<input type="password" id="signUpPassword" class="form-control" placeholder="Password" required="" ng-model="credentials.password">
+	<label for="signUpConfirmPassword" class="sr-only">Confirm Password</label>
+	<input type="password" id="signUpConfirmPassword" class="form-control" placeholder="Password" required="" ng-model="credentials.password">
+	<label for="signUpPhone" class="sr-only">Phone</label>
+	<input type="text" id="signUpPhone" class="form-control" placeholder="Phone" required="" autofocus="" ng-model="credentials.phone">	
+	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	</form>
+</div>
+</div>
